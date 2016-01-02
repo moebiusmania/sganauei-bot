@@ -1,0 +1,23 @@
+{
+  "name": "sganauei-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://moebiusmania@github.com/moebiusmania/sganauei-bot.git"
+  },
+  "author": "Salvatore Laisa",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/moebiusmania/sganauei-bot/issues"
+  },
+  "homepage": "https://github.com/moebiusmania/sganauei-bot#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.17.1"
+  }
+}
