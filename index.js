@@ -60,9 +60,15 @@ bot.onText(/\/cosabevo (.+)/, function (msg, match) {
 
 // Any kind of message
 // bot.on('message', function (msg) {
-//   var chatId = msg.chat.id;
-//   // photo can be: a file path, a stream or a Telegram file_id
-//   var photo = 'cats.png';
-//   // bot.sendPhoto(chatId, photo, {caption: 'Lovely kittens'});
-//   // bot.sendMessage(chatId,'figa boh!');
+//   var fromId = msg.chat.id ? msg.chat.id : msg.from.id;
+//   console.log(msg);
+//   if(msg.text.indexOf('cantare') > -1 ){
+//     bot.sendMessage(fromId, 'heeeei heeeeEEEEI HEEEEEEEEI');
+//   }
 // });
+
+bot.onText(/canta/, function (msg, match) {
+  var fromId = msg.chat.id ? msg.chat.id : msg.from.id;
+  console.log(msg.text);
+  bot.sendMessage(fromId, 'heeeei heeeeEEEEI HEEEEEEEEI');
+});
